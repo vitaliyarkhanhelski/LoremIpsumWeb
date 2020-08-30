@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: #cae4ff;
+            text-align: center;
+            font-family: georgia, garamond, serif;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 45px;
+            align: center;
+            margin: auto;
+            border-radius: 15px 45px;
+            background: #fbb3b3;
+            width: 770px;
+            padding: 25px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        input {
+            font-weight: bold;
+        }
+
+        .number {
+            width: 100px;
+            height: 50px;
+        }
+
+        .submit {
+            width: 160px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<br>
+
+<h1>Word Generator</h1>
+
+<br><br><br>
+
+<h2>
+    <form action="/result">
+        <label>Specify how many words to generate</label>
+        <input class="number" type="number" name="count">
+        <input class="submit" type="submit" value="Generate">
+    </form>
+</h2>
+
+<br><br><br><br><br>
+
+<img src="Lorem-Ipsum-alternatives.png" alt="Lorem-Ipsum">
+</body>
+</html>

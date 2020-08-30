@@ -1,0 +1,33 @@
+body {
+    background: #cae4ff;
+    text-align: center;
+    font-family: georgia, garamond, serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 45px;
+    align: center;
+    margin: auto;
+    border-radius: 15px 45px;
+    background: #fbb3b3;
+    width: 770px;
+    padding: 25px;
+}
+
+h2 {
+
+    font-size: 30px;
+}
+
+input {
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
