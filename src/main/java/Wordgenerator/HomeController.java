@@ -13,9 +13,7 @@ public class HomeController {
     public String getResult(@RequestParam Integer count,
                             ModelMap map) {
         LoremIpsum loremIpsum = new LoremIpsum();
-        String words = loremIpsum.getWords(count);
-        System.out.println(words);
-        map.put("words", words);
+        map.put("words", loremIpsum.getWords(count));
         return "result";
     }
 }
