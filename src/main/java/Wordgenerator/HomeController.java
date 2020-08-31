@@ -16,4 +16,10 @@ public class HomeController {
         map.put("words", loremIpsum.getWords(count));
         return "result";
     }
+
+    @GetMapping("/")
+    public String getResult(){
+        return "index";
+    }
+
 }

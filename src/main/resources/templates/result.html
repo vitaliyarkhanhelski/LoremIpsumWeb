@@ -3,12 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Result</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: #cae4ff;
+            text-align: center;
+            font-family: georgia, garamond, serif;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 45px;
+            align: center;
+            margin: auto;
+            border-radius: 15px 45px;
+            background: #fbb3b3;
+            width: 770px;
+            padding: 25px;
+        }
+
+        h2 {
+            font-size: 25px;
+            padding: 30px;
+            border-radius: 15px 45px;
+            background: #fbb3b3;
+            width: 770px;
+            margin: auto;
+        }
+
+        h3 {
+            padding: 25px;
+            border-radius: 15px 45px;
+            border: solid black;
+            margin: auto;
+            width: 1300px;
+        }
+
+        input {
+            font-weight: bold;
+        }
+
+        .number {
+            width: 100px;
+            height: 50px;
+        }
+
+        .submit {
+            width: 160px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
 <br>
 <h1>Lorem Ipsum Text</h1>
 <br>
+<br>
 <h3 th:text="${words}"></h3>
+<br>
+<hr>
+<br>
+
+<h2>
+    <form action="/">
+        <input class="submit" type="submit" value="Go back">
+    </form>
+</h2>
 </body>
 </html>
