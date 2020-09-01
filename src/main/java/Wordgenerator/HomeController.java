@@ -12,13 +12,20 @@ public class HomeController {
     @GetMapping("/result")
     public String getResult(@RequestParam Integer count,
                             ModelMap map) {
-        LoremIpsum loremIpsum = new LoremIpsum();
-        map.put("words", loremIpsum.getWords(count));
+        if (count == null) {
+            map.put("words", "");
+        }
+        else if(count>2147483647)
+            map.put("words", "Error: OUT OF RANGE");
+        else {
+            LoremIpsum loremIpsum = new LoremIpsum();
+            map.put("words", loremIpsum.getWords(count));
+        }
         return "result";
     }
 
     @GetMapping("/")
-    public String getResult(){
+    public String getResult() {
         return "index";
     }
 

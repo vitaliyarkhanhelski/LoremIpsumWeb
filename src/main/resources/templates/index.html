@@ -33,7 +33,7 @@
         }
 
         .number {
-            width: 110px;
+            width: 120px;
             height: 50px;
         }
 
@@ -55,7 +55,8 @@
 <h2>
     <form action="/result">
         <label>Specify how many words to generate</label>
-        <input class="number" type="number" name="count">
+        <input class="number" max="10000" min="0" type="number" name="count">
+
         <input class="submit" type="submit" value="Generate">
     </form>
 </h2>
