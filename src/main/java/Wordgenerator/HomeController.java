@@ -14,10 +14,7 @@ public class HomeController {
                             ModelMap map) {
         if (count == null) {
             map.put("words", "");
-        }
-        else if(count>2147483647)
-            map.put("words", "Error: OUT OF RANGE");
-        else {
+        } else {
             LoremIpsum loremIpsum = new LoremIpsum();
             map.put("words", loremIpsum.getWords(count));
         }
